@@ -18,6 +18,15 @@ Coorboro la cadena y PoW
 
 A pesar de que he agregado la red a MetaMask, no se muestra el saldo. Sin embargo, al ejecutar `npx nodemon` en la terminal, sí puedo ver el saldo de la wallet. ¿Podría esto estar relacionado con el nodo que no se levanta correctamente?
 
+Terminal
+![Screenshot 2023-08-20 at 1 09 55 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/fb3b0a79-db6e-4a61-b5e4-2ba2f466325b)
+
+Wallet
+![Screenshot 2023-08-20 at 12 32 55 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/d7354b70-efa7-41cf-8536-28e6e2aa284f)
+
+
+
+
 ### 3. Problemas con el Saldo en el Frontend
 
 En el frontend, la aplicación detecta y responde cuando me conecto a MetaMask y también refleja los cambios cuando cambio de cuentas. Sin embargo, el saldo siempre se muestra como cero. ¿Es posible que el saldo real sea un decimal (como 0,5 ETH) y por eso no se muestra?
