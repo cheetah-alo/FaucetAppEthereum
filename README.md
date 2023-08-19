@@ -14,7 +14,7 @@ This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng.
 - `$WalletAddresJson`: Address created in `./node/data/keystore/UTC--2023-...`
 - `$WalletAddressMetamak`: Any account from your MetaMask to interact with the app.
 
-## Docker Commands for Ethereum Node
+## Ethereum Node
 
 To interact with the Ethereum node, Docker is utilized to run Ethereum client containers. The node's configuration is stored in the "node" directory.
 
