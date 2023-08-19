@@ -81,7 +81,8 @@ The address on alloc must be updated when you get the public addres from the eth
 
     To connect with this network on MetaMask, follow the steps shown in the image below:
 
-    ![Adding port to metamask](./01-projfaucet/reports/figures/adding_the_info_to_Metamask.png)
+![adding_the_info_to_Metamask](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/e6a0f31a-6782-4119-9ba3-38ca8bb682c9)
+
 
 ## Backend
 
