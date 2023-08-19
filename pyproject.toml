@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ethereum-faucet-app"
+version = "0.1.0"
+description = "A backend service for an Ethereum faucet app."
+authors = [Jacky Barraza, aka ginger-alo]
+
+[tool.poetry.dependencies]
+web3 = "^5.23.0"
+express = "^4.17.1"
+cors = "^2.8.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
