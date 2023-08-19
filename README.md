@@ -104,10 +104,13 @@ The backend is developed using Express.js and communicates with an Ethereum node
 
 ### How to Run:
 
+Make sure to fill the variables with the right information. 
+
 1. Ensure Node.js and npm are installed.
 2. Navigate to the backend directory.
 3. Install dependencies: `npm install`.
-4. Start the server: `npm start`.
+4. To check the app: `npx nodemon app.js`.
+
 
 </br>
 
@@ -131,6 +134,11 @@ The frontend is crafted using React and communicates with the Ethereum blockchai
 
 </br>
 </br>
+
+If there is any commenst to improve and help other to learn, let me know. 
+
+Thanks :D 
+
 </br>
 
 
