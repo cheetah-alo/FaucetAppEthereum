@@ -118,5 +118,5 @@ The frontend is crafted using React and communicates with the Ethereum blockchai
 1. Ensure Node.js, npm, and MetaMask are installed.
 2. Navigate to the frontend directory.
 3. Install dependencies: `npm install`.
-4. Start the development server: `npm start`.
+4. Start the development server: `npm run dev`.
 5. Open a browser and ensure MetaMask is connected to the appropriate network.
