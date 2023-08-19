@@ -7,7 +7,8 @@ This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng.
 
 ### App Architecture
 
-![App architecture](./01-projfaucet/reports/figures/App-architecture.png)
+![App-architecture](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/b30ffcc0-fb01-4665-94eb-c03ea41af3fd)
+
 
 **Reference Variables**:
 - `$WalletAddresJson`: Address created in `./node/data/keystore/UTC--2023-...`
