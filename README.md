@@ -7,8 +7,10 @@ This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng.
 
 ### App Architecture
 
-![App-architecture](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/b30ffcc0-fb01-4665-94eb-c03ea41af3fd)
+</br>
 
+![App-architecture](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/b30ffcc0-fb01-4665-94eb-c03ea41af3fd)
+source: taken from course materia codecripto
 
 **Reference Variables**:
 - `$WalletAddresJson`: Address created in `./node/data/keystore/UTC--2023-...`
@@ -81,8 +83,12 @@ The address on alloc must be updated when you get the public addres from the eth
 
     To connect with this network on MetaMask, follow the steps shown in the image below:
 
+</br>
+
+
 ![adding_the_info_to_Metamask](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/e6a0f31a-6782-4119-9ba3-38ca8bb682c9)
 
+</br>
 
 ## Backend
 
@@ -103,6 +109,8 @@ The backend is developed using Express.js and communicates with an Ethereum node
 3. Install dependencies: `npm install`.
 4. Start the server: `npm start`.
 
+</br>
+
 ## Frontend
 
 The frontend is crafted using React and communicates with the Ethereum blockchain via the MetaMask browser extension.
@@ -120,3 +128,10 @@ The frontend is crafted using React and communicates with the Ethereum blockchai
 3. Install dependencies: `npm install`.
 4. Start the development server: `npm run dev`.
 5. Open a browser and ensure MetaMask is connected to the appropriate network.
+
+</br>
+</br>
+</br>
+
+
+
