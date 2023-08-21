@@ -11,7 +11,8 @@ There are some points that I haven´t been able to haddle it. Those points are d
 
 </br>
 
-![App-architecture](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/b30ffcc0-fb01-4665-94eb-c03ea41af3fd)
+![App-architecture](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/9c8fb771-9ef9-46d5-978c-4cc567fcbf3c)
+
 source: taken from course materia codecripto
 
 **Reference Variables**:
@@ -89,8 +90,8 @@ The docker sentence below can be found on the repo at `./back/docker commands`
 
 </br>
 
+![adding_the_info_to_Metamask](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/e1f5f063-6d45-4fd6-8300-79bf86df8170)
 
-![adding_the_info_to_Metamask](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/e6a0f31a-6782-4119-9ba3-38ca8bb682c9)
 
 </br>
 
