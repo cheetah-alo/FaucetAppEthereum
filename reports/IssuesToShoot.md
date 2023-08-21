@@ -25,7 +25,7 @@ When I check the node log, I have the PoW consensus mechanism and the specified 
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-20 at 12.34.04 AM.png" alt=""><figcaption></figcaption></figure>
 
-\
+
 
 
 ### 2. MetaMask Balance  
@@ -44,7 +44,7 @@ On the Terminal
 
 On the frontend, the application detects and responds when I connect to MetaMask and also reflects changes when I switch accounts. However, the balance always displays as zero. Could it be that the actual balance is a decimal (like 0.5 ETH) and that's why it's not showing up?
 
-\
+
 
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-20 at 12.33.49 AM.png" alt=""><figcaption></figcaption></figure>
