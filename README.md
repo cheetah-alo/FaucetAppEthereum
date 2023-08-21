@@ -5,6 +5,8 @@
 
 This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng. Master" course offered by [CodeCrypto Academy](https://codecrypto.academy/). The application is a combination of a frontend and backend that interacts with an Ethereum node (PoW). The backend provides an API to fetch the balance of an Ethereum account and to send Ether from a faucet to a specified address. The frontend allows users to view their Ethereum address, balance, and request Ether from the faucet.
 
+There are some points that I haven´t been able to haddle it. Those points are decribed at `reports/IssuesToShoot.md`
+
 ### App Architecture
 
 </br>
