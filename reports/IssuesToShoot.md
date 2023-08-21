@@ -1,49 +1,50 @@
-## Problemas con la Implementación de la App para Faucet
+---
+description: Description of the challenges found while doing the exercise
+cover: >-
+  https://images.unsplash.com/photo-1469389335181-2198b4caa734?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxjb25zdHJ1Y3Rpb25zfGVufDB8fHx8MTY5MjY0MjMyOHww&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
 
-Estoy enfrentando varios desafíos al desarrollar una aplicación para un faucet en Ethereum. A continuación, detallo los problemas que he encontrado, con la esperanza de obtener alguna orientación o solución:
+# 🧱 Issues with the Faucet App Implementation
 
-### 1. Problema al Inicializar el Nodo
+I am facing several challenges when developing an application for an Ethereum faucet. Below, I detail the problems I have encountered, hoping to get some guidance or solution:\
 
-Al intentar inicializar el nodo, recibo el siguiente error: `zsh:command not found`. Este error se presenta específicamente cuando intento usar el comando `--mine`. He buscado soluciones en línea, pero no he encontrado nada que se relacione específicamente con este comando.
 
-**Imagen del error:** 
+&#x20;
 
-![Screenshot 2023-08-20 at 12 36 55 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/4e38b65e-e971-4325-ac49-1e67ed9e40cc)
+### 1. Issue Initializing the Node 
 
-</br>
+When trying to initialize the node, I get the following error: `zsh:command not found`. This error occurs specifically when I try to use the `--mine` command. I have searched for solutions online, but I haven't found anything specifically related to this command. Error image:
 
-Coorboro la cadena y PoW
+**Error Imagen:**
 
-![Screenshot 2023-08-20 at 12 34 04 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/6ffd9ea1-ffc5-48e0-9eca-392613f74832)
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-20 at 12.36.55 AM.png" alt=""><figcaption></figcaption></figure>
 
-</br>
+When I check the node log, I have the PoW consensus mechanism and the specified chain id.\
 
-### 2. Inconsistencia en el Saldo en MetaMask
 
-A pesar de que he agregado la red a MetaMask, no se muestra el saldo. Sin embargo, al ejecutar `npx nodemon` en la terminal, sí puedo ver el saldo de la wallet. ¿Podría esto estar relacionado con el nodo que no se levanta correctamente?
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-20 at 12.34.04 AM.png" alt=""><figcaption></figcaption></figure>
 
-Terminal
-</br>
+\
 
-![Screenshot 2023-08-20 at 1 09 55 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/fb3b0a79-db6e-4a61-b5e4-2ba2f466325b)
 
-</br>
+### 2. MetaMask Balance  
+
+Even though I've added the network to MetaMask, the balance doesn't show up. However, when running `npx nodemon` in the terminal, I can see a wallet balance. Could this be related to the node not starting up correctly?
 
 Wallet
 
-</br>
+![](<../.gitbook/assets/Screenshot 2023-08-20 at 12.32.55 AM.png>)
 
-![Screenshot 2023-08-20 at 12 32 55 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/d7354b70-efa7-41cf-8536-28e6e2aa284f)
+On the Terminal
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-21 at 8.37.38 PM.png" alt=""><figcaption></figcaption></figure>
 
-</br>
+### 3. Issues with the Balance Displayed on the Frontend&#x20;
 
-### 3. Problemas con el Saldo en el Frontend
+On the frontend, the application detects and responds when I connect to MetaMask and also reflects changes when I switch accounts. However, the balance always displays as zero. Could it be that the actual balance is a decimal (like 0.5 ETH) and that's why it's not showing up?
 
-En el frontend, la aplicación detecta y responde cuando me conecto a MetaMask y también refleja los cambios cuando cambio de cuentas. Sin embargo, el saldo siempre se muestra como cero. ¿Es posible que el saldo real sea un decimal (como 0,5 ETH) y por eso no se muestra?
-
-</br>
-
-![Screenshot 2023-08-20 at 12 33 49 AM](https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/dbe16da4-ec53-4eeb-a50d-c784c5f7531b)
+\
 
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-20 at 12.33.49 AM.png" alt=""><figcaption></figcaption></figure>
