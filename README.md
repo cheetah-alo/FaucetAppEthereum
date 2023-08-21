@@ -49,6 +49,8 @@ The address on alloc must be updated when you get the public addres from the eth
 
 ### Docker Commands:
 
+The docker sentence below can be found on the repo at `./back/docker commands`
+
 1. **Create a New Ethereum Account**:
     ```bash
     docker run --rm -it \
