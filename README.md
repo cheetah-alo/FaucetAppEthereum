@@ -28,7 +28,7 @@ There are some points that I haven´t been able to haddle it. Those points are d
 
 source: taken from course materia codecripto
 
-\
+
 **Reference for Variables**:
 
 * `$WalletAddresJson`: Address created in `./node/data/keystore/UTC--2023-...`
@@ -88,7 +88,7 @@ The docker sentence below can be found on the repo at `./back/docker commands`
     --keystore data
     ```
 
-    \
+    
     After executing, provide a password. A new file will be generated in `..node/data/keystore`. Ensure to change its format to `.json`.\
 
 2.  **Initialize Ethereum Node with Genesis Block**:
@@ -169,12 +169,12 @@ The frontend is crafted using React and communicates with the Ethereum blockchai
 4. Start the development server: `npm run dev`.
 5. Open a browser and ensure MetaMask is connected to the appropriate network.
 
-\
+
 
 
 If there is any comments to improve and help other to learn, let me know.
 
-\
+
 Thanks and Happy Codding
 
-JB\
+JB
