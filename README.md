@@ -7,6 +7,12 @@ coverY: 48
 
 # Ethereum Faucet App
 
+```
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+```
+
 ## Overview
 
 This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng. Master" course offered by [CodeCrypto Academy](https://codecrypto.academy/). The application is a combination of a **frontend** and **backend** that interacts with an **Ethereum node (PoW)**. \\
