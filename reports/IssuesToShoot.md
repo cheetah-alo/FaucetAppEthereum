@@ -1,6 +1,3 @@
----
-description: Description of the challenges found while doing the exercise
----
 
 # 🧱 Issues with the Faucet App Implementation
 
