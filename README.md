@@ -1,6 +1,3 @@
----
-description: Repo description and settings
----
 
 # 👾 Ethereum Private Network Faucet
 
