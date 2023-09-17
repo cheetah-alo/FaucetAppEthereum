@@ -2,7 +2,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-function App() {
+const { ethereum } = window;
+
+function FaucetApp() {
   // State variables to store the Ethereum account and its balance
   const [cuenta, setCuenta] = useState(null);
   const [saldo, setSaldo] = useState(0);
@@ -25,7 +27,7 @@ function App() {
         setCuenta(cuentas[0]);
       })
       .catch((err) => {
-        setError("Failed to request Ethereum accounts.");
+        setError("Failed to fetch account.");
         console.error(err);
       });
 
@@ -40,8 +42,7 @@ function App() {
     async function obtenerBalance() {
       // Exit if no account is set
       if (!cuenta) return;
-
-      const url = `http://localhost:3333/balance/${cuenta}`;
+      const url = `http://localhost:3639/balance/${cuenta}`;
       try {
         // Fetch the balance from our backend
         const response = await fetch(url);
@@ -59,13 +60,13 @@ function App() {
 
   // Function to invoke the faucet and get some test Ether
   async function invocarFaucet() {
-    const url = `http://localhost:33303/faucet/${cuenta}`;
+    const url = `http://localhost:3639/faucet/${cuenta}`;
     try {
       const response = await fetch(url);
       const json = await response.json();
       console.log(json);
     } catch (err) {
-      setError("Failed to invoke faucet.");
+      setError("Failed to send ethereum.");
       console.error(err);
     }
   }
@@ -74,17 +75,39 @@ function App() {
   return (
     <div>
       {/* Display any error messages */}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && (
+        <p style={{ color: "#ff6f61", fontSize: "130%" }}>
+          Failed to invoke faucet.
+        </p>
+      )}
       {/* Display the Ethereum address and balance */}
-      <h1>Address: {cuenta || "Not connected"}</h1>
+      <div
+        style={{
+          border: "5px solid #ccc",
+          padding: "2px",
+          backgroundColor: "#55C2D3",
+        }}>
+        <h1>Address: {cuenta || "Not connected"}</h1>
+      </div>
       <h1>Balance: {saldo}</h1>
+
       {/* Button to invoke the faucet */}
-      <button onClick={invocarFaucet} disabled={!cuenta}>
-        Invocar Faucet
+      <button
+        onClick={() => invocarFaucet()}
+        style={{
+          padding: "15px 30px",
+          backgroundColor: "#8bc34a",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          fontSize: "130%",
+        }}>
+        Request 0.5 ETH
       </button>
     </div>
   );
 }
 
 // Export the App component to be used in other parts of our app
-export default App;
+export default FaucetApp;
