@@ -1,16 +1,5 @@
 ---
 description: Repo description and settings
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: false
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 👾 Ethereum Private Network Faucet
