@@ -3,7 +3,7 @@
 
 
 <div id="header" align="center">
-  <figure><img src="https://media.giphy.com/media/yeE6B8nEKcTMWWvBzD/giphy.gif" alt="" width="100"><figcaption></figcaption></figure>
+  <figure><img src="https://github.com/cheetah-alo/FaucetAppEthereum/assets/51385472/45416c68-5512-4d6e-98d7-6f5e0db36ffe" alt="" width="100"><figcaption></figcaption></figure>
 </div>
 
 <div id="badges" align="center">
