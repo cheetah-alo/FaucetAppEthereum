@@ -1,12 +1,6 @@
 ---
 description: Repo description and settings
-cover: >-
-  https://images.unsplash.com/photo-1556010334-298f19160723?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw0fHxmYXVjZXR8ZW58MHx8fHwxNjkyNjQxNTIwfDA&ixlib=rb-4.0.3&q=85
-coverY: 48
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:
