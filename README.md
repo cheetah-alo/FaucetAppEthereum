@@ -1,15 +1,18 @@
-
 # 👾 Ethereum Private Network Faucet
+
+<figure><img src="https://media.giphy.com/media/yeE6B8nEKcTMWWvBzD/giphy.gif" alt="" width="188"><figcaption></figcaption></figure>
+
+##
 
 ## Overview
 
-This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng. Master" course offered by [CodeCrypto Academy](https://codecrypto.academy/).&#x20;
+This project is a part of the curriculum for the "FromWeb2toWeb3 Blockchain Eng. Master" course offered by [CodeCrypto Academy](https://codecrypto.academy/).
 
-This repository contains instructions and code for setting up a faucet for a private Ethereum network. The faucet allows users to request and receive Ether (ETH) for testing and development purposes.&#x20;
+This repository contains instructions and code for setting up a faucet for a private Ethereum network. The faucet allows users to request and receive Ether (ETH) for testing and development purposes.
 
 ### App Architecture
 
-The architecture of the app is given by codecrypto.academy, see the scheme below:&#x20;
+The architecture of the app is given by codecrypto.academy, see the scheme below:
 
 <figure><img src=".gitbook/assets/Screenshot 2023-09-16 at 4.45.11 PM.png" alt=""><figcaption><p>App Architecture, source: cedecrypto.academy</p></figcaption></figure>
 
@@ -28,7 +31,7 @@ The following steps will guide you through the setup process:
 
 ### I. Ethereum Node
 
-To interact with the Ethereum node, docker is utilized to run Ethereum client containers. The node's configuration is stored in the "node" directory. Inside the `node` folder, you need to create a `genesis.json` file with the content below. \
+To interact with the Ethereum node, docker is utilized to run Ethereum client containers. The node's configuration is stored in the "node" directory. Inside the `node` folder, you need to create a `genesis.json` file with the content below.\
 \
 <mark style="color:orange;">**Note**</mark>: "alloc" is where you will give the address that want with balance, including the public address from the Ethereum node.
 
@@ -67,8 +70,6 @@ If we'd like to pre-fund some accounts for easier testing, create the accounts a
   }
 }
 ```
-
-
 
 ***
 
@@ -111,7 +112,7 @@ ethereum/client-go:v1.11.5 init \
 ```
 
 \
-<mark style="color:orange;">**Note**</mark>: Post-execution, verify the creation of a new folder at `..node/data/geth, this information is a representation of the Ethereum database.`&#x20;
+<mark style="color:orange;">**Note**</mark>: Post-execution, verify the creation of a new folder at `..node/data/geth, this information is a representation of the Ethereum database.`
 
 This command is used to initialized a docker container for creating a new Ethereum account. Find below the meaning of each part of the sentence:
 
@@ -148,7 +149,7 @@ This command runs a docker container for a private Ethereum node.
 * `--http.addr 0.0.0.0 --http.port 8545` - This sets the address and port for the HTTP-RPC server. It will listen on all available network interfaces (`0.0.0.0`) and port 8545.
 * `--http.corsdomain="*"` - This allows any domain to access the HTTP-RPC server, which can be useful for development purposes but might be a security risk in production.
 * `--mine` - This starts the Ethereum node in mining mode.
-* `--miner.etherbase 0x000000000000000000000000000000000` - This sets the Ethereum address that will receive mining rewards. Replace this with your desired address.&#x20;
+* `--miner.etherbase 0x000000000000000000000000000000000` - This sets the Ethereum address that will receive mining rewards. Replace this with your desired address.
 * `--miner.threads 1` - Specifies that the Ethereum node should use one thread for mining.
 
 **Note**: After starting the container, it's important to verify the chain ID and ensure that the Proof of Work (PoW) version of Ethereum is running. You can do this by inspecting the container logs.
@@ -172,9 +173,8 @@ Configure Metamask to connect to the Ethereum private network. Follow these step
 
 <figure><img src=".gitbook/assets/adding_the_info_to_Metamask.png" alt=""><figcaption></figcaption></figure>
 
-Then you will be on your metamask the red with the balance given. \
-\
-
+Then you will be on your metamask the red with the balance given.\
+\\
 
 <figure><img src=".gitbook/assets/Screenshot 2023-09-16 at 6.20.13 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -186,7 +186,7 @@ To be able to execute the app, we nne to add the correct value to the variables 
 
 * PORT: app server port listen
 * ADDRESS\_WALLET\_JSON: addresse create for the Ethereum account lacated in the "../node/data/keystore/UTC--2023.."
-* DEFAULT\_ACCOUNT:  address from my test metamask account
+* DEFAULT\_ACCOUNT: address from my test metamask account
 * KEYSTOREPATH: Load and decrypt an Ethereum account using a keystore file and password
 
 ## Backend
@@ -207,7 +207,7 @@ Make sure to fill the variables with the right information.
 
 1. Ensure Node.js and npm are installed.
 2. Navigate to the backend directory.
-3. Install dependencies  npm install cors express web3
+3. Install dependencies npm install cors express web3
 4. To check the app: `npx nodemon app.js`.
 
 ***
