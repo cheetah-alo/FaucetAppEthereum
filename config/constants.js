@@ -1,7 +1,7 @@
 // Constants
 
 // port
-const PORT = 3333;
+const PORT = 3639;
 
 // Addresse create for the Ethereum account lacated in the "../node/data/keystore/UTC--2023.."
 const ADDRESS_WALLET_JSON = "0x00000000000000000000000000000000000000000";

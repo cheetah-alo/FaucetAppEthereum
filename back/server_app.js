@@ -4,9 +4,6 @@ const fs = require("fs");
 const cors = require("cors");
 const express = require("express");
 
-// Import constants
-const { PORT, ADDRESS_WALLET_JSON, KEYSTOREPATH } = require("../config/myconstants");
-
 // Create a new Express application
 const app = express();
 
@@ -15,6 +12,17 @@ app.use(cors());
 
 // Create a new Web3 instance connected to a local Ethereum node
 const web3 = new Web3("http://localhost:8545");
+
+// Import constants
+const {
+  PORT,
+  ADDRESS_WALLET_JSON,
+  KEYSTOREPATH,
+} = require("../config/myconstants");
+
+app.get("/ping", (req, res) => {
+  res.send({ date: new Date().toISOString() });
+});
 
 const json = JSON.parse(fs.readFileSync(KEYSTOREPATH, "utf-8"));
 
@@ -57,16 +65,3 @@ app.get("/faucet/:address", async (req, res) => {
 app.listen(PORT, "localhost", () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-// Retrieve and display the balance of an "Master" Ethereum account
-(async () => {
-  try {
-    const balance = await web3.eth.getBalance(
-      //address from the json file linked to the mining's wallet
-      ADDRESS_WALLET_JSON
-    );
-    console.log(`Balance: ${balance}`);
-  } catch (err) {
-    console.error("Error retrieving balance:", err);
-  }
-})();
