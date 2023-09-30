@@ -42,7 +42,7 @@ app.get("/faucet/:address", async (req, res) => {
   try {
     const account = await web3.eth.accounts.decrypt(json, "1234");
     const tx = {
-      chainId: 8888,
+      chainId: 12345,
       to: req.params.address,
       from: account.address,
       gas: 30000,
